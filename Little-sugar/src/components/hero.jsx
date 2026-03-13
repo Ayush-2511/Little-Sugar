@@ -5,12 +5,10 @@ function Hero() {
         const LS = document.querySelector(".LS")
         const AS = document.querySelector(".AS")
         const img = document.querySelector(".hero-image")
-        LS.style.transform = `translateY(0px)`;
-        AS.style.transform = `translateY(0px)`
         LS.style.filter = `blur(0px)`
         LS.style.transform = `translateY(-${scrollY/2}px)`;
-        AS.style.transform = `translateY(-${(scrollY)/2}px)`
-        // img.style.backgroundPositionY = `${scrollY+800}px`
+        AS.style.transform = `translateY(-${(scrollY)+30}px)`
+        img.style.backgroundPositionY = `-${900-scrollY}px`
         img.style.height = `${430-(scrollY/5)}px`
     }
     window.addEventListener('scroll', move);

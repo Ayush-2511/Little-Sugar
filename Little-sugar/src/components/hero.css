@@ -10,6 +10,7 @@
 .hero-text {
     text-align: left;
     padding: 5.5rem 0 2rem 1rem;
+    height: auto;
 }
 .hero-text .LS {
     font-family: Playfair Display, serif;
@@ -22,15 +23,15 @@
     font-size: 6rem;
     font-weight: 100;
     color: #666;
-    transform: translateY(-10%);
+    transform: translateY(-30px);
 }
 .hero-image {
     position: absolute;
     width: 90%;
-    height: 281.6px;
+    height: 430px;
     border-radius: 10px;
     margin: 0 5rem 2rem 5rem;
     background-image: url("../assets/hero-2.png");
     background-size: cover;
-    background-position: center;
+    background-position-y: -900px;
 }
