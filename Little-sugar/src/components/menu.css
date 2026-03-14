@@ -7,31 +7,36 @@
     padding: 10rem;
 }
 .menu-title {
-    font-family: Playfair Display, serif;
-    font-size: 3rem;
+    font-family: MonteCarlo, cursive;
+    font-weight: 100;
+    font-size: 5rem;
+    color: #7F5E4F;
 }
 .buttons {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    
     margin: 1.5rem 0;
 }
 .button {
     padding: 0.5rem 1.2rem;
     border-radius: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     outline: none;
     border: none;
+    font-family: Playfair Display, serif;
     background-color: #ffdd92;
-    transition: all 0.8s ease;
+    transition: all 0.4s ease;
 }
 button.active{
-    padding: 0.5rem 1.2rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     outline: none;
     border: none;
-    background-color: #703e00;
+    font-family: Playfair Display, serif;
+    background-color: #7F5E4F;
     color: #ffdd92;
 }
 .menu-scroll {
@@ -49,7 +54,7 @@ button.active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem;
+    padding: 3rem;
 }
 .menu-page ul {
     list-style: none;
@@ -61,39 +66,27 @@ button.active{
 }
 
 ul li {
-    font-family: 'Lato', sans-serif;
+    font-family: Playfair Display, serif;
     display: flex;
     justify-content: space-between;
     text-align: center;
-    transition: all 0.3s ease;
 }
 ul li h3 {
     display: inline;
     font-size: 24px;
     margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 100;
 }
 ul li p {
     display: inline;
-    font-size: 18px;
-    color: #E7B797;
+    font-size: 1.5rem;
+    color: #333;
 }
 
 .divider {
   flex: 1;
-  border-bottom: 3px solid #777;
+  border-bottom: 2px solid #777;
   margin: 0 12px 15px;
-  transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s cubic-bezier(.25,1.21,0,.91), border-color 0.3s ease;
-}
-
-ul li:hover {
-  color: #ebe0d9;
-}
-ul li:hover .divider{
-  transform: scaleX(1);
-  border-color: #ebe0d9;
-}
-ul li:hover h3 {
-    text-shadow: 0 0px 20px #e4c9b770;
 }

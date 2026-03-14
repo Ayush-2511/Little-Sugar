@@ -8,6 +8,7 @@ import Hero from './components/hero'
 import About from './components/About'
 import Menu from './components/menu'
 import Footer from './components/Footer'
+import Gallery from './components/gallery'
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
       <Hero />
       <About />
       <Menu />
+      <Gallery />
       <Footer />
     </div>
   )

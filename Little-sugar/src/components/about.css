@@ -30,5 +30,5 @@
     background-image: url('../assets/About.jpg');
     background-size: cover;
     background-position: center;
-    border-radius: 36px;
+    z-index: -2;
 }

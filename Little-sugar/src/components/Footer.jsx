@@ -3,22 +3,18 @@ function Footer(){
     return(
         <footer>
             <div className="footer">
-                <div className="footerText-left">
-                    <h4>Visit</h4>
-                    <p>123 Main Street, Jaipur</p>  
+                <h1 className="Name">Little Sugar</h1>
+                <div className="links">
+                    <a href="#">Home</a>
+                    <a href="#about">About us</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
                 </div>
-                <div className="footerText-center">
-                    <p class="logo">Bar Palladio</p>
-                    <p class ="tagline">Jaipur · Est. 2016</p>
-                </div>
-                <div className="footerText-right">
-                    <h4>Contact</h4>
-                    <p>Email: info@barpalladio.com</p>
-                    <p>Phone: +91 141 234 5678</p>
-                </div>
+                <div className="find"><p>920 Shekhupura, Vikas Nagar, Lucknow</p>
+                <p>Follow us => @littlesugarbakes</p></div>
             </div>
             <div className="copyright">
-                <p>© 2026 Bar Palladio. All rights reserved.</p>
+                <p>© 2026 The Little Sugar | Artisian Bakery. All rights reserved.</p>
             </div>
         </footer>
     )

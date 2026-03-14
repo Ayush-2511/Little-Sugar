@@ -1,26 +1,37 @@
 footer{
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #1a1918;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
 }
 .footer {
     display: flex;
     justify-content: space-between;
+    padding: 3rem 1rem 0 1rem;
 }
-.footerText-left{
-    float: left;
-    margin-left: 20px;
+.Name {
+    font-family: Playfair Display, serif;
+    font-weight: 200;
+    font-size: 6rem;
+    align-content:end;
 }
-.footerText-center{
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    color: #eee8de;
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: end;
+    padding-bottom: 1rem;
 }
-.footerText-right{
-    float: right;
-    margin-right: 20px;
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.find {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1.3rem;
+    text-align: right;
 }

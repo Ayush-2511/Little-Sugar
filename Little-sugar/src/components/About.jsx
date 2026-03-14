@@ -4,14 +4,9 @@ function About(){
     function scrollAnimate() {
         const text = document.querySelector(".text")
         const img = document.querySelector(".about-img")
-        if((scrollY >100 && scrollY < 600) || scrollY >=850) {
-            text.style.transform = `translateX(-${((-(15/600)*scrollY)+15)**2}px)`
-            img.style.transform = `translateX(${((-(15/600)*scrollY)+15)**2}px)`
-            if ( scrollY >=850) {
-                text.style.transform = `translateX(${((-(20/850)*scrollY)+20)**2}px)`
-                img.style.transform = `translateX(-${((-(20/850)*scrollY)+20)**2}px)`
-            }
-        }
+        
+        text.style.transform = `translateY(0px)`
+        img.style.transform = `translateY(-${((-(200/700)*scrollY)+200)}px)`
     console.log(scrollY)
     }
     window.addEventListener('scroll',scrollAnimate)

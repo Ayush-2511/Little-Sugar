@@ -1,17 +1,25 @@
 import './hero.css'
-
+import { useEffect } from 'react'
 function Hero() {
-    function move(){
-        const LS = document.querySelector(".LS")
-        const AS = document.querySelector(".AS")
-        const img = document.querySelector(".hero-image")
-        LS.style.filter = `blur(0px)`
-        LS.style.transform = `translateY(-${scrollY/2}px)`;
-        AS.style.transform = `translateY(-${(scrollY)+30}px)`
-        // img.style.backgroundPositionY = `-${900-scrollY}px`
-        img.style.height = `${430-(scrollY/5)}px`
+    useEffect(() => {
+    const LS = document.querySelector(".LS")
+    const AS = document.querySelector(".AS")
+    const img = document.querySelector(".hero-image")
+
+    function move() {
+      LS.style.filter = `blur(0px)`
+      LS.style.transform = `translateY(-${scrollY * 5}px)`
+      AS.style.transform = `translateY(-${(scrollY * 1.5) + 30}px)`
+      img.style.height = `${430 - (scrollY / 5)}px`
     }
-    window.addEventListener('scroll', move);
+
+    LS.addEventListener('animationend', () => {
+      window.addEventListener('scroll', move)
+    })
+
+    return () => window.removeEventListener('scroll', move) // cleanup
+  }, [])
+    
     return (
         <section className="hero">
             <div className='hero-text'>
