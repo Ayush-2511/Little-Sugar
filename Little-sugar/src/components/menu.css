@@ -24,9 +24,9 @@
     border-radius: 2rem;
     font-size: 1.5rem;
     outline: none;
-    border: none;
+    border: transparent solid 2px;
     font-family: Playfair Display, serif;
-    background-color: #ffdd92;
+    background-color: #FFF7E7;
     transition: all 0.4s ease;
 }
 button.active{
@@ -37,7 +37,11 @@ button.active{
     border: none;
     font-family: Playfair Display, serif;
     background-color: #7F5E4F;
-    color: #ffdd92;
+    color: #FFF7E7;
+}
+.button:hover {
+    border: #7F5E4F solid 3px;
+    transition: all 0.4s ease;
 }
 .menu-scroll {
     display: flex;
