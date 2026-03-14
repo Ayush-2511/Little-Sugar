@@ -2,6 +2,9 @@
   position: fixed;
   width: 100%;
   z-index: 3;
+  
+  mix-blend-mode: difference;
+  color: #fff;
 }
 .navbar {
   display: flex;
@@ -12,10 +15,8 @@
   
 }
 
-.navbar h1 {
+.navbar .logo {
   margin: 0;
-  color: #362d24;
-  mix-blend-mode: difference;
 }
 
 .navbar ul {
@@ -34,9 +35,10 @@
 .navbar li a {
   text-decoration: none;
   mix-blend-mode: difference;
-  color: #362d24;
+  color: #fff;
+  font-weight: 100;
 }
 
 .navbar li a:hover {
-  color: #007bff;
+  color: #7b7b7b;
 }

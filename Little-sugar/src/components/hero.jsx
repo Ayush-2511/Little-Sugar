@@ -8,7 +8,7 @@ function Hero() {
         LS.style.filter = `blur(0px)`
         LS.style.transform = `translateY(-${scrollY/2}px)`;
         AS.style.transform = `translateY(-${(scrollY)+30}px)`
-        img.style.backgroundPositionY = `-${900-scrollY}px`
+        // img.style.backgroundPositionY = `-${900-scrollY}px`
         img.style.height = `${430-(scrollY/5)}px`
     }
     window.addEventListener('scroll', move);

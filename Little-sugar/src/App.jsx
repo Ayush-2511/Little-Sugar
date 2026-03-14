@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/hero'
 import About from './components/About'
 import Menu from './components/menu'
+import Footer from './components/Footer'
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
       <Hero />
       <About />
       <Menu />
+      <Footer />
     </div>
   )
 }
