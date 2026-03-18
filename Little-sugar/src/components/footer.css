@@ -35,3 +35,8 @@ footer{
     font-size: 1.3rem;
     text-align: right;
 }
+.copyright {
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
