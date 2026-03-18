@@ -40,7 +40,7 @@ button.active{
     color: #FFF7E7;
 }
 .button:hover {
-    border: #7F5E4F solid 3px;
+    border: #7F5E4F solid 2px;
     transition: all 0.4s ease;
 }
 .menu-scroll {
