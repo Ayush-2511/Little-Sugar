@@ -11,7 +11,7 @@ function Footer(){
                     <a href="#gallery">Gallery</a>
                 </div>
                 <div className="find"><p>920 Shekhupura, Vikas Nagar, Lucknow</p>
-                <p>Follow us => @littlesugarbakes</p></div>
+                <p>Follow us | <a className="a-link" href="https://www.instagram.com/littlesugarbakes/?hl=en" target="_blank" rel="noopener noreferrer">@littlesugarbakes</a></p></div>
             </div>
             <div className="copyright">
                 <p>© 2026 The Little Sugar | Artisian Bakery. All rights reserved.</p>
