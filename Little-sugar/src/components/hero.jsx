@@ -14,7 +14,7 @@ function Hero() {
       img.style.borderRadius = `${10 + (scrollY/25)}px`
     }
 
-    window.addEventListener('scroll', move)
+    window.addEventListener('scroll', move, { passive: true })
   
     
     return (
