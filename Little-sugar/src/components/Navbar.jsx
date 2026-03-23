@@ -1,36 +1,28 @@
+import { useState } from 'react';
 import './Navbar.css'
-import { useState } from 'react'
-
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const handleLinkClick = () => {
-    setIsOpen(false);
-  };
-
+  const [open, setOpen] = useState(false)
   return (
     <section className='header'>
       <nav className="navbar">
         <a className='logo' href='#'>TLS.</a>
-        
-        {/* Hamburger Button */}
-        <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        
-        {/* Navigation Menu */}
-        <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          <li><a href="#about" onClick={handleLinkClick}>our Story</a></li>
-          <li><a href="#menu" onClick={handleLinkClick}>our Sweets</a></li>
-          <li><a href="#gallery" onClick={handleLinkClick}>a Little look</a></li>
+        <ul className='nav-links'>
+          <li><a href="#about">our Story</a></li>
+          <li><a href="#menu">our Sweets</a></li>
+          <li><a href="#gallery">a Little look</a></li>
         </ul>
+
+        <button className='hamburger' onClick={() => setOpen(!open)}>
+          {open ? '✕' : '☰'}
+        </button>
+
       </nav>
+
+      <div className={`mobile-menu ${open ? 'open' : 'closed'}`}>
+        <a href="#about">our Story</a>
+        <a href="#menu">our Sweets</a>
+        <a href="#gallery">a Little look</a>
+      </div>
     </section>
   );
 }
